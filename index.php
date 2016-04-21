@@ -39,7 +39,7 @@
     <script src="/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Included Scripts -->
-    <script src="./scripts/main.js"></script>
+    <script src="./js/main.js"></script>
 
     <?php
     	// Include FAMU logo header
