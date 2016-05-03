@@ -1,5 +1,5 @@
 <?php
-	define("APP_NAME", "Senior Leadership Meeting Links");
+	define("APP_NAME", "SLT Meeting Links for the Office of Human Resources");
 	define("APP_PATH", "http://" . $_SERVER['HTTP_HOST'] . "./bootstrap/apps/login_system/");
     define("APP_HOMEPAGE", "links");
 
@@ -86,6 +86,9 @@
 			echo '<h2>404 Error</h2>Page does not exist';
 		}
     ?>
+
+    <!-- Footer -->
+    <?php include "../templates/footer_1.php"; ?>
 
   </body>
 </html>
