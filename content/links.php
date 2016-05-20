@@ -9,7 +9,7 @@
 		FROM hrodt.senior_leadership_link l
 		JOIN hrodt.senior_leadership_file f
 			ON l.file_id = f.id
-		WHERE l.group_id = 1
+		WHERE l.group_id = 1 AND Active = 1
 		ORDER BY l.linkName
 	";
 	$stmt = $conn->prepare($sel_di_links);
@@ -22,7 +22,7 @@
 		FROM hrodt.senior_leadership_link l
 		JOIN hrodt.senior_leadership_file f
 			ON l.file_id = f.id
-		WHERE l.group_id = 2
+		WHERE l.group_id = 2 AND Active = 1
 		ORDER BY l.linkName
 	";
 	$stmt = $conn->prepare($sel_rp_links);
@@ -35,7 +35,7 @@
 		FROM hrodt.senior_leadership_link l
 		JOIN hrodt.senior_leadership_file f
 			ON l.file_id = f.id
-		WHERE l.group_id = 3
+		WHERE l.group_id = 3 AND Active = 1
 		ORDER BY l.linkName
 	";
 	$stmt = $conn->prepare($sel_vsp_links);
@@ -48,7 +48,7 @@
 		FROM hrodt.senior_leadership_link l
 		JOIN hrodt.senior_leadership_file f
 			ON l.file_id = f.id
-		WHERE l.group_id = 4
+		WHERE l.group_id = 4 AND Active = 1
 		ORDER BY l.linkName
 	";
 	$stmt = $conn->prepare($sel_flsa_links);
